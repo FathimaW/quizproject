@@ -13,18 +13,18 @@
 		</script>
 		<script src="js/bootstrap.min.js"></script>
 		<section class="jumbotron">
-    		<div class="container">
+    		<div class="container-fluid">
       			<div class="row text-center">
         			<h2>Välkommen till årets bästa Film-kryss</h2>
+        			<h5>Kallar du dig själv för Film-expert expert? <br /> Har du koll på flera populära filmer som sändts genom åren? <br /> Då ska du defintivt testa dina kunskaper i de olika kryssen nedan! <br /> Vi har skapat tre film-kryss i genrena  Action, Drama och Komedi. <br /> May the force be with you! </h5>
       			</div>
     		</div>
   		</section>
-		<p>Kallar du dig själv för Film-expert expert? Har du koll på flera populära filmer som sändts genom åren? <br /> Då ska du defintivt testa dina kunskaper i de olika kryssen nedan. <br /> Vi har skapat tre film-kryss i genrena  Action, Drama och Komedi. <br /> May the force be with you! </p>
 		<br />
 		<br />
 		<br />
 	{% for quiz in quizzes %}
-    	<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
+    	<p class="startpage-paragraph"><a href="{% url 'quiz_page' quiz.quiz_number %}">
         {{ quiz.name }}
    		 </a></p>
 	{% endfor %}
@@ -35,6 +35,6 @@
 		<br />
 		<br />
 		<br />
-		<p id = "footer">&copy; Fathima</p>
+		<p id ="footer" class="col-sm-4">&copy; Fathima</p>
 	</body>
 </html>

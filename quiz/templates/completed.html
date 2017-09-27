@@ -12,26 +12,23 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 		</script>
 		<script src="js/bootstrap.min.js"></script>
-		<h1>Du är klar och fick {{ correct }} av {{ total }}</h1>
 		<section class="jumbotron">
     		<div class="container">
       			<div class="row text-center">
-      				<h1>10/12 Rätt</h1>
+					<h1 class="completed-text">Grattis! Du fick {{ correct }} av {{ total }}</h1>
+					<br />
+					<br />
 					<img src=/static/congratz.gif width="400" height="200"/>
       			</div>
     		</div>
   		</section>
   		<br />
-        <p> Stort Grattis! <br /> Du är en riktig Film-expert trots allt! <Br /> Testa gärna ett av de andra kryssen och se om du lyckas lika bra med dem!</p>
 		<br />
-		<br />
-		<br />
-		<br />
-		<p><a href="{% url 'start_page' %}">
+		<p class="col-sm-12"><a href="{% url 'start_page' %}">
    		 Till startsidan
 		</a></p>
 		<br />
 		<br />
-		<p id = "footer">&copy; Fathima</p>
+		<p id ="footer" class="col-sm-4">&copy; Fathima</p>
 	</body>
 </html>

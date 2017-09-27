@@ -2,22 +2,83 @@ body {
 	font-family: Georgia, serif;
 	height: 100%;
 	margin: 0;
-	text-align: center;
 	width: 100%;
+	background-color: #FFFF00;
 }
 
-h1 {
-	font-size: 32px;
-}
 
 h2 {
-	color: DarkSlateGray;
+	color: #FFFF00;
 	font-size: 56px; 
 }
 
-
+p {
+	color: #FFFF00;
+	font-size: 25px;
+	text-align: center;
+}
 
 #footer {
+	color: Grey;
+	font-size: 12px;
+	text-align: left;
+
+}
+
+.questionsize {
+	font-size: 30px;
 	color: DarkSlateGray;
-	font-size: 16px;
+	text-align: center;
+}
+
+.startpage-paragraph {
+	font-size: 20px;
+	text-align: center;
+}
+
+.completed-text {
+	color: #FFFF00;
+	font-size: 40px; 
+	text-align: center;
+}
+
+.quiz-header {
+	color: #000000;
+	font-size: 25px; 
+	text-align: center;
+}
+
+.quiz-list {
+	font-size: 25px; 
+	text-align: center;
+}
+
+.question-header {
+	color: #000000;
+	font-size: 25px; 
+	text-align: center;
+}
+
+.jumbotron {
+  display: flex;
+  background-color: #000000;
+  align-items: center;
+  background-size: cover;
+  color: #FFFF00;
+  height: 100%;
+  width: 100%;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.question-answers {
+	color: #000000;
+	font-size: 25px; 
+	text-align: center;
+}
+
+form {
+	color: #000000;
+	font-size: 25px; 
+	text-align: center;
+	margin-bottom: 10;
 }

@@ -13,13 +13,17 @@
 		</script>
 		<script src="js/bootstrap.min.js"></script>
 		<section class="jumbotron">
-    		<div class="container">
+    		<div class="container-fluid">
       			<div class="row text-center">
-        			<h1>Action-Krysset</h1>
+        			<h2>Action-Krysset</h2>
       			</div>
     		</div>
   		</section>
- 	<h1>{{ quiz.name }}</h1>
+ 	<br />
+ 	<br />
+ 	<h1 class="quiz-header">{{ quiz.name }}</h1>
+ 	<br />
+ 	<br />
 	<p><a href="{% url 'question_page' quiz_number 1 %}">
     Starta
 	</a></p>
@@ -33,6 +37,6 @@
 		<br />
 		<br />
 		<br />
-		<p id = "footer">&copy; Fathima</p>
+		<p id ="footer" class="col-sm-4">&copy; Fathima</p>
 	</body>
 </html>
