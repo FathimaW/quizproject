@@ -13,9 +13,6 @@
 		</script>
 		<script src="js/bootstrap.min.js"></script>
 		<h1>Du är klar och fick {{ correct }} av {{ total }}</h1>
-		<p><a href="{% url 'completed_page' quiz_number %}">
-   		 Nästa
-		</a></p>
 		<section class="jumbotron">
     		<div class="container">
       			<div class="row text-center">
@@ -30,6 +27,9 @@
 		<br />
 		<br />
 		<br />
+		<p><a href="{% url 'start_page' %}">
+   		 Till startsidan
+		</a></p>
 		<br />
 		<br />
 		<p id = "footer">&copy; Fathima</p>
