@@ -9,12 +9,17 @@ body {
 
 h2 {
 	color: #FFFF00;
-	font-size: 56px; 
+	font-size: 40px; 
 }
 
 p {
 	color: #FFFF00;
-	font-size: 25px;
+	font-size: 20px;
+	text-align: center;
+}
+
+a {
+	color: #FFFF00;
 	text-align: center;
 }
 
@@ -26,13 +31,13 @@ p {
 }
 
 .questionsize {
-	font-size: 30px;
+	font-size: 25px;
 	color: DarkSlateGray;
 	text-align: center;
 }
 
 .startpage-paragraph {
-	font-size: 20px;
+	font-size: 25px;
 	text-align: center;
 }
 
@@ -81,4 +86,13 @@ form {
 	font-size: 25px; 
 	text-align: center;
 	margin-bottom: 10;
+}
+
+.black {
+  background-color: #000000;
+  box-shadow: 0px 5px 0px 0px #000000;
+}
+
+.black:hover {
+  background-color: #000000;
 }

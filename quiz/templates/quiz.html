@@ -15,28 +15,27 @@
 		<section class="jumbotron">
     		<div class="container-fluid">
       			<div class="row text-center">
-        			<h2>Action-Krysset</h2>
+        			<h2>May the force be with you...</h2>
+        			<br />
+        			<img src=/static/Yoda.gif width="400" height="200"/>
       			</div>
     		</div>
   		</section>
- 	<br />
- 	<br />
- 	<h1 class="quiz-header">{{ quiz.name }}</h1>
- 	<br />
- 	<br />
-	<p><a href="{% url 'question_page' quiz_number 1 %}">
-    Starta
-	</a></p>
+ 		<br />
+ 		<br />
+ 		<h1 class="quiz-header">{{ quiz.name }}</h1>
+ 		<br />
+ 		<br />
+		<p>
+			<a href="{% url 'question_page' quiz_number 1 %}" class="btn black">
+    			Starta
+			</a>
+		</p>
+		<br />
 		<br />
 		<br />
 		<br />
 		<img src="">
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
 		<p id ="footer" class="col-sm-4">&copy; Fathima</p>
 	</body>
 </html>
