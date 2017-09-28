@@ -23,15 +23,13 @@
 		<br />
 		<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 			{% csrf_token %}
-			<input type="radio" class="question-answers">{{ answer1 }}</input><br />
-			<input type="radio" class="question-answers">{{ answer2 }}</input><br />
-			<input type="radio" class="question-answers">{{ answer3 }}</input>
+			<input type="radio" name="answer" value="1" checked> {{ answer1 }}</input><br />
+			<input type="radio" name="answer" value="2"> {{ answer2 }}</input><br />
+			<input type="radio" name="answer" value="3"> {{ answer3 }}</input>
+			<button type="submit">Nästa</button>
 		</form>
 		<br />
 		<br />
-		<p><a href="{% url 'completed_page' quiz_number %}">
-   		 Nästa
-		</a></p>
 		<br />
 		<br />
 		<p id ="footer" class="col-sm-4">&copy; Fathima</p>
