@@ -21,7 +21,8 @@
   		</section>
 		<br />
 		<br />
-		<form>
+		<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+			{% csrf_token %}
 			<input type="radio" class="question-answers">{{ answer1 }}</input><br />
 			<input type="radio" class="question-answers">{{ answer2 }}</input><br />
 			<input type="radio" class="question-answers">{{ answer3 }}</input>
