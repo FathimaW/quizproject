@@ -12,9 +12,10 @@ h2 {
 	font-size: 40px; 
 }
 
+
 p {
 	color: #FFFF00;
-	font-size: 20px;
+	font-size: 25px;
 	text-align: center;
 }
 
@@ -30,11 +31,6 @@ a {
 
 }
 
-.questionsize {
-	font-size: 25px;
-	color: DarkSlateGray;
-	text-align: center;
-}
 
 .startpage-paragraph {
 	font-size: 25px;
@@ -91,8 +87,10 @@ form {
 .black {
   background-color: #000000;
   box-shadow: 0px 5px 0px 0px #000000;
+  color: #FFFF00;
 }
 
 .black:hover {
   background-color: #000000;
 }
+
