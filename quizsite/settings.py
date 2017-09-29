@@ -25,7 +25,7 @@ SECRET_KEY = '_rc3)kb5nk#2$)=!9%9zgu!+5dp-%b!d)$=7&$r0@(6*o@=&2$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -74,11 +74,13 @@ WSGI_APPLICATION = 'quizsite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
+import dj_database_url
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config(
+        default='sqlite:////{0}'.format(
+            os.path.join(BASE_DIR, 'db.sqlite3')
+        )
+    )
 }
 
 
@@ -122,3 +124,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+STATIC_ROOT = 'staticfiles'
