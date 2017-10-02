@@ -24,16 +24,14 @@
 			</div>
 			{% endfor %}
 			<div class="row text-center">
-				<h2>May the force be with you...</h2>
+				<h1>{{ quiz.name }} - Krysset</h1>
 				<br />
-				<img src=/static/Yoda.gif width="400" height="200"/>
+				<img src="/static/genre{{ quiz_number }}.gif" width="400" height="200"/>
 			</div>
 		</div>
 	</section>
 	<br />
-	<br />
-	<h1 class="quiz-header">{{ quiz.name }} - Krysset</h1>
-	<br />
+	<h4 class="text-center">Du kommer nu att få bevisa dina filmkunskaper genom att svara på 15 frågor. <br /> Frågorna handlar allt från filmtitlar, rollnamn till regissörer. <br /> Tryck på "Starta" för att sätta igång med krysset! <br /> Lycka till!</h4>
 	<br />
 	<p>
 		<a href="{% url 'question_page' quiz_number 1 %}" class="btn black">
@@ -44,7 +42,8 @@
 	<br />
 	<br />
 	<br />
-	<img src="">
-	<p id ="footer" class="col-sm-4">&copy; Fathima W.</p>
+	<footer class="col-sm-4">
+		<p id="footer">&copy; 2017 Fathima W.</p>
+	</footer>
 </body>
 </html>

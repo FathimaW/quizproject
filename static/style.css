@@ -10,6 +10,8 @@ body {
 h2 {
 	color: #FFFF00;
 	font-size: 40px; 
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
@@ -17,11 +19,15 @@ p {
 	color: #FFFF00;
 	font-size: 25px;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 a {
 	color: #FFFF00;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #footer {
@@ -31,50 +37,26 @@ a {
 
 }
 
-.startpage-paragraph {
-	font-size: 25px;
-	text-align: center;
+footer {
+	color: Grey
+	font-size: 12px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-.completed-text {
-	color: #FFFF00;
-	font-size: 40px; 
-	text-align: center;
-}
-
-.quiz-header {
-	color: #000000;
-	font-size: 25px; 
-	text-align: center;
-}
-
-.quiz-list {
-	font-size: 25px; 
-	text-align: center;
-}
-
-.question-header {
-	color: #000000;
-	font-size: 25px; 
-	text-align: center;
-}
 
 .jumbotron {
-  display: flex;
-  background-color: #000000;
-  align-items: center;
-  background-size: cover;
-  color: #FFFF00;
-  height: 100%;
-  width: 100%;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+	display: flex;
+	background-color: #000000;
+	align-items: center;
+	background-size: cover;
+	color: #FFFF00;
+	height: 100%;
+	width: 100%;
+	text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
-.question-answers {
-	color: #000000;
-	font-size: 25px; 
-	text-align: center;
-}
 
 form {
 	font-size: 25px; 
@@ -83,12 +65,12 @@ form {
 }
 
 .black {
-  background-color: #000000;
-  box-shadow: 0px 5px 0px 0px #000000;
-  color: #FFFF00;
+	background-color: #000000;
+	box-shadow: 0px 5px 0px 0px #000000;
+	color: #FFFF00;
 }
 
 .black:hover {
-  background-color: #000000;
+	background-color: #000000;
+	color: #FFFF00;
 }
-
