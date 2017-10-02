@@ -1,62 +1,62 @@
 <!doctype html>
 <html>
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/static/style.css">
-		<meta charset="utf-8">
-		<title>Film-krysset</title>
-	</head>
-	<body>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-		</script>
-		<script src="js/bootstrap.min.js"></script>
-		<section class="jumbotron">
-    		<div class="container-fluid">
-      			<div class="row text-center">
-        			<h1>Välkommen till årets bästa Film-kryss</h1> <br />
-        			<h4>Kallar du dig själv för Film-expert? <br /> Har du koll på flera populära filmer som sändts genom åren? <br /> Då ska du defintivt testa dina kunskaper i de olika kryssen nedan! <br /> Vi har skapat tre film-kryss i genrerna  Action, Drama och Komedi. <br /> Lycka till! </h4>
-      			</div>
-    		</div>
-  		</section>
-		<br />
-		<br />
-		<br />
-		<div class="container">
-    			<div class="col-md-4">
-    				<div class="row text-center">
-    					<img src=/static/Action.gif width="175" height="125"/>
-   		 			</div>
-   		 		</div>
-   		 		<div class="col-md-4">
-   		 			<div class="row text-center">
-    					<img src=/static/Drama.gif width="175" height="125"/>
-   		 			</div>
-   		 		</div>
-   		 		<div class="col-md-4">
-   		 			<div class="row text-center">
-    					<img src=/static/Comedy.gif width="175" height="125"/>
-   		 			</div>
-   		 		</div>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/style.css">
+	<meta charset="utf-8">
+	<title>Film-krysset</title>
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+	<section class="jumbotron">
+		<div class="container-fluid">
+			<div class="row text-center">
+				<h1>Välkommen till årets bästa Film-kryss</h1> <br />
+				<h4>Kallar du dig själv för Film-expert? <br /> Har du koll på flera populära filmer som sändts genom åren? <br /> Då ska du defintivt testa dina kunskaper i de olika kryssen nedan! <br /> Vi har skapat tre film-kryss i genrerna  Action, Drama och Komedi. <br /> Lycka till! </h4>
+			</div>
 		</div>
-		<br />
-		<br />
-		<div class="container">
-			{% for quiz in quizzes %}
-    			<div class="col-md-4">
-    				<div class="row text-center">
-    					<a href="{% url 'quiz_page' quiz.quiz_number %}" class="btn black">
-        					{{ quiz.name }}
-   		 				</a>
-   		 			</div>
-   		 		</div>
-			{% endfor %}
+	</section>
+	<br />
+	<br />
+	<br />
+	<div class="container">
+		<div class="col-md-4">
+			<div class="row text-center">
+				<img src=/static/Action.gif width="175" height="125"/>
+			</div>
 		</div>
-		<br />
-		<br />
-		<br />
-		<br />
-		<p id ="footer" class="col-sm-4">&copy; Fathima W.</p>
-	</body>
+		<div class="col-md-4">
+			<div class="row text-center">
+				<img src=/static/Drama.gif width="175" height="125"/>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="row text-center">
+				<img src=/static/Comedy.gif width="175" height="125"/>
+			</div>
+		</div>
+	</div>
+	<br />
+	<br />
+	<div class="container">
+		{% for quiz in quizzes %}
+		<div class="col-md-4">
+			<div class="row text-center">
+				<a href="{% url 'quiz_page' quiz.quiz_number %}" class="btn black">
+					{{ quiz.name }}
+				</a>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<p id ="footer" class="col-sm-4">&copy; Fathima W.</p>
+</body>
 </html>

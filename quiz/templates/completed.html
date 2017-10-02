@@ -1,38 +1,62 @@
 <!doctype html>
 <html>
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/static/style.css">
-		<meta charset="utf-8">
-		<title>Film-krysset</title>
-	</head>
-	<body>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-		</script>
-		<script src="js/bootstrap.min.js"></script>
-		<section class="jumbotron">
-    		<div class="container">
-      			<div class="row text-center">
-					<h1 class="completed-text">Grattis! Du fick {{ correct }} av {{ total }}</h1>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/style.css">
+	<meta charset="utf-8">
+	<title>Film-krysset</title>
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+	<section class="jumbotron">
+		<div class="container">
+			<div class="row text-center">
+				<h2 class="completed-text">
+					{% if correct > 12 %}
+					Grattis! Du fick {{ correct }} av {{ total }} rätt. <br /> Du är en riktig film-expert trots allt. Det trodde jag inte.
 					<br />
 					<br />
-					<img src=/static/congratz.gif width="400" height="200"/>
-      			</div>
-    		</div>
-  		</section>
-  		<br />
-		<br />
-		<p class="col-sm-12">
-			<a href="{% url 'start_page' %}" class="btn black">
-   		 		Till startsidan
-			</a>
-		</p>
-		<br />
-		<br />
-		<br />
-		<br />
-		<p id ="footer" class="col-sm-4">&copy; Fathima W.</p>
-	</body>
+					<img src=/static/congratz.gif width="375" height="175"/>
+					{% elif correct > 9 %}
+					Grattis! Du fick {{ correct }} av {{ total }} rätt. <br /> Du kan en hel del om filmer, men en film-expert är du inte!
+					<br />
+					<br />
+					<img src=/static/mediocre.gif width="375" height="175"/>
+					{% else %}
+					Du fick {{ correct }} av {{ total }} rätt. <br /> Vilken besvikelse! Du kan ju inget om filmer... 
+					<br />
+					<br />
+					<img src=/static/disappointed.gif width="375" height="175"/>
+					{% endif %}
+				</h2>
+			</div>
+		</div>
+	</section>
+	<br />
+	<h3 class="text-center">
+		{% if correct > 12 %}
+			Testa gärna ett av de andra quizzen och se om du lyckas lika bra där!
+		{% elif correct > 9 %}
+			Testa gärna ett av de andra quizzen och se om du lyckas bättre där!
+		{% else %}
+			Tveksamt att du skulle lyckas bättre i de andra kryssen, men du får gärna försöka!
+		{% endif %}
+	</h3>
+	<br />
+	<br />
+	<p class="col-sm-12">
+		<a href="{% url 'start_page' %}" class="btn black">
+			Till startsidan
+		</a>
+	</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<p id ="footer" class="col-sm-4">&copy; Fathima W.</p>
+</body>
 </html>
